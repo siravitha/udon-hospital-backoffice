@@ -1,0 +1,34 @@
+{
+  "mcpServers": {
+    "AgentsRoom-Chrome": {
+      "url": "http://127.0.0.1:44013/mcp/chrome?AR_BROWSER_PROJECT_ID=proj-1793437514135-a59ai2",
+      "type": "http",
+      "headers": {
+        "Authorization": "Bearer ${AGENTSROOM_MCP_SESSION}"
+      }
+    },
+    "AgentsRoom-MCP": {
+      "url": "http://127.0.0.1:44013/mcp/app?AR_PROJECT_ID=proj-1793437514135-a59ai2&AR_PROJECT_PATH=%2Fhome%2Fadmin%2FHOS-BACKOFFICE",
+      "type": "http",
+      "headers": {
+        "Authorization": "Bearer ${AGENTSROOM_MCP_SESSION}"
+      },
+      "timeout": 3600000
+    },
+    "AgentsRoom-Test-Runner": {
+      "url": "http://127.0.0.1:44013/mcp/test-runner?AR_BROWSER_PROJECT_ID=proj-1793437514135-a59ai2&AR_PROJECT_PATH=%2Fhome%2Fadmin%2FHOS-BACKOFFICE",
+      "type": "http",
+      "headers": {
+        "Authorization": "Bearer ${AGENTSROOM_MCP_SESSION}"
+      },
+      "timeout": 3600000
+    },
+    "AgentsRoom-QA-Tester": {
+      "url": "http://127.0.0.1:44013/mcp/qa-tester?AR_BROWSER_PROJECT_ID=proj-1793437514135-a59ai2",
+      "type": "http",
+      "headers": {
+        "Authorization": "Bearer ${AGENTSROOM_MCP_SESSION}"
+      }
+    }
+  }
+}

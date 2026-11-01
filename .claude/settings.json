@@ -1,0 +1,35 @@
+{
+  "theme": "dark",
+  "env": {
+    "OLLAMA_HOST": "http://127.0.0.1:11434",
+    "ANTHROPIC_BASE_URL": "http://127.0.0.1:11434",
+    "ANTHROPIC_AUTH_TOKEN": "ollama",
+    "ANTHROPIC_API_KEY": "ollama",
+    "ANTHROPIC_MODEL": "dgx-qwen3.8:27b",
+    "ANTHROPIC_DEFAULT_SONNET_MODEL": "dgx-qwen3.8:27b",
+    "ANTHROPIC_DEFAULT_OPUS_MODEL": "dgx-qwen3.8:27b",
+    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "dgx-qwen3-coder:30b",
+    "CLAUDE_CODE_SUBAGENT_MODEL": "dgx-qwen3.8:27b",
+    "CLAUDE_CODE_MAX_OUTPUT_TOKENS": "64000",
+    "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1",
+    "DISABLE_TELEMETRY": "1",
+    "DISABLE_ERROR_REPORTING": "1"
+  },
+  "permissions": {
+    "allow": [
+      "Bash(*)",
+      "Read(*)",
+      "Edit(*)",
+      "Write(*)",
+      "MultiEdit(*)",
+      "Glob(*)",
+      "Grep(*)",
+      "LS(*)",
+      "WebFetch(*)",
+      "mcp__*"
+    ],
+    "deny": [],
+    "defaultMode": "bypassPermissions"
+  },
+  "skipDangerousModePermissionPrompt": true
+}

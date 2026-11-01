@@ -1,0 +1,26 @@
+{
+  "name": "hos-backoffice",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --port 3000",
+    "build": "next build",
+    "start": "next start --port 3000",
+    "test:fixture": "node --experimental-strip-types -e \"import { runSharedFixtureCheck, computeThreeWay } from './src/server/engines/three-way-match-tax.engine.ts'; runSharedFixtureCheck(); console.log('SHARED FIXTURE PASS:', computeThreeWay({ inclVat: 1070000, vendorClass: 'PRIVATE', penalty: 50000 }));\""
+  },
+  "dependencies": {
+    "argon2": "^0.41.1",
+    "next": "^15.1.6",
+    "pg": "^8.13.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/pg": "^8.11.10",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "typescript": "^5.7.3"
+  }
+}
+
